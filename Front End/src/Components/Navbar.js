@@ -16,19 +16,19 @@ const Navbar = () => {
 
             <div className="hidden lg:block w-full">
                 <div className="w-full flex justify-between px-16 items-center py-8 ">
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center mr-6">
                         <h1 style={{ color: "#546fff" }} className="text-3xl font-bold "> CAR RENTAL </h1>
                         <div className="flex border border-2 py-2 ml-6 items-center  rounded-full px-3 ">
                             <Search sx={{ color: "gray" }}></Search>
                             <input className="w-full outline-none" placeholder="Search something here" ></input>
                         </div>
                     </div>
-                    <div className="flex items-center " >
-                        <div className="text-xl font-bold flex items-center mr-14 hover:cursor-pointer"><Home sx={{ fontSize: 30 }} ></Home> <span className="ml-2">Home</span> </div>
+                    <div className="flex items-center mr-6" >
+                        <div className="text-xl font-bold flex items-center mr-10  hover:cursor-pointer"><Home sx={{ fontSize: 30 }} ></Home> <span className="ml-2">Home</span> </div>
                         <div className="text-xl font-bold flex items-center hover:cursor-pointer"> <DriveEta sx={{ fontSize: 30 }}></DriveEta> <span className="ml-2">Products</span></div>
                     </div>
 
-                    <div className="flex  ">
+                    <div className="flex  mr-2">
                         <div style={{ backgroundColor: "#54a6ff" }} className="border rounded-full px-2 py-1 mr-2  "><Nightlight sx={{ color: "white", }}></Nightlight></div>
                         <div className="border  rounded-full px-2 py-1 mr-2 border-gray-300 hover:border-black hover:cursor-pointer hover:border-xl "><Favorite sx={{ color: "gray", "&:hover": { color: "black" } }}></Favorite></div>
                         <div className="border rounded-full px-2 py-1 mr-2 border-gray-300 hover:border-black hover:cursor-pointer hover:border-lg"><Notifications sx={{ color: "gray", "&:hover": { color: "black" } }}></Notifications></div>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 <div className="w-full flex justify-between ">
                     <h1 style={{ color: "#546fff" }} className="text-2xl font-bold "> CAR RENTAL  </h1>
                     <div className="flex ">
-                        <div style={{ backgroundColor: "#546fff" }} className="border rounded-full px-2 py-1 mr-2   hover:cursor-pointer "><Notifications sx={{ color: "white" }}></Notifications></div>
+                        <div style={{ backgroundColor: "#54a6ff" }} className="border rounded-full px-2 py-1 mr-2   hover:cursor-pointer "><Notifications sx={{ color: "white" }}></Notifications></div>
                         <div className="border rounded-full   border-gray-300 hover:border-black hover:cursor-pointer hover:border-lg"><Avatar ></Avatar></div>
                     </div>
                 </div>
