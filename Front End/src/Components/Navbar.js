@@ -27,7 +27,6 @@ const Navbar = () => {
                         <div className="text-xl font-bold flex items-center mr-10  hover:cursor-pointer"><Home sx={{ fontSize: 30 }} ></Home> <span className="ml-2">Home</span> </div>
                         <div className="text-xl font-bold flex items-center hover:cursor-pointer"> <DriveEta sx={{ fontSize: 30 }}></DriveEta> <span className="ml-2">Products</span></div>
                     </div>
-
                     <div className="flex  mr-2">
                         <div style={{ backgroundColor: "#54a6ff" }} className="border rounded-full px-2 py-1 mr-2  "><Nightlight sx={{ color: "white", }}></Nightlight></div>
                         <div className="border  rounded-full px-2 py-1 mr-2 border-gray-300 hover:border-black hover:cursor-pointer hover:border-xl "><Favorite sx={{ color: "gray", "&:hover": { color: "black" } }}></Favorite></div>
@@ -38,10 +37,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-
-
-
-
             <div className="px-4 py-6 lg:hidden">
                 <div className="w-full flex justify-between ">
                     <h1 style={{ color: "#546fff" }} className="text-2xl font-bold "> CAR RENTAL  </h1>
@@ -50,7 +45,6 @@ const Navbar = () => {
                         <div className="border rounded-full   border-gray-300 hover:border-black hover:cursor-pointer hover:border-lg"><Avatar ></Avatar></div>
                     </div>
                 </div>
-
                 <div className="mt-4 flex w-full justify-between  ">
                     <div className="flex border border-2  items-center py-2 rounded-xl px-3 w-full">
                         <Search sx={{ color: "gray" }}></Search>
@@ -63,9 +57,9 @@ const Navbar = () => {
                     <div style={{ backgroundColor: "#54a6ff" }} className="border rounded-full px-2 py-2 mr-2  "><Nightlight sx={{ color: "white", }}></Nightlight></div>
                     <div style={{ backgroundColor: "#546fff" }} className="border rounded-full px-2 py-2 mr-2  "><ImportExport sx={{ color: "white", }}></ImportExport></div>
                 </div>
-
-
             </div>
+
+
         </div>
     )
 }

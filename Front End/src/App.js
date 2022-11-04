@@ -1,8 +1,9 @@
 import Navbar from "./Components/Navbar";
+import CarsHome from "./Components/CarsHome";
 function App() {
   return (
     <div>
-      <Navbar></Navbar>
+      <CarsHome></CarsHome>
     </div>
   );
 }
