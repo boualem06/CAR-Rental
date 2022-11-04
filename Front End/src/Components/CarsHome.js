@@ -60,9 +60,6 @@ const CarsHome = () => {
                     }
                 </div>
             </div>
-
-
-
         </div>)
 }
 

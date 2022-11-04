@@ -1,10 +1,14 @@
 import Navbar from "./Components/Navbar";
 import CarsHome from "./Components/CarsHome";
+import CarCard from "./Components/CarCard";
 function App() {
   return (
-    <div>
-      <CarsHome></CarsHome>
-    </div>
+      <div className="px-4 py-4">
+          <CarCard></CarCard>
+
+      </div>
+      
+
   );
 }
 
