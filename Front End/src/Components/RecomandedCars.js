@@ -19,6 +19,9 @@ const RecomandedCars=()=>{
             <CarCard></CarCard>
             <CarCard></CarCard>
             <CarCard></CarCard>
+            <CarCard></CarCard>
+            <CarCard></CarCard>
+            <CarCard></CarCard>
         </div>
     )
 }
