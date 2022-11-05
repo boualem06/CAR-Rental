@@ -1,18 +1,18 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import FavoriteBorderOutlined from "@mui/icons-material/FavoriteBorderOutlined"
 import FavoriteOutlined from "@mui/icons-material/FavoriteOutlined"
 import LocalGasStationOutlined from "@mui/icons-material/LocalGasStationOutlined"
 import DriveEta from "@mui/icons-material/DriveEta"
 import PeopleOutlined from "@mui/icons-material/PeopleOutlined"
 import car1 from '../images/car1.png'
-const CarCardP=()=>{
+const CarCardP = () => {
     const [liked, setLiked] = useState(false);
 
     const like = () => { setLiked(true) } //allows to like a publication 
     const dislike = () => { setLiked(false) } //allows to dislike a publication
-    return(
-        <div>
-             <div className="border border-gray rounded-md shadow-xl  px-4 py-6">
+    return (
+
+        <div className="border border-gray rounded-md shadow-xl  px-4 py-6 max-w-xs mr-4">
             <div className='flex justify-between'>
                 <h1 className='font-bold text-2xl'>Maruti Suzuki</h1>
                 {liked ? <button onClick={dislike}><FavoriteOutlined sx={{ color: "red" }}></FavoriteOutlined> </button> : <button onClick={like}><FavoriteBorderOutlined sx={{ color: "gray" }}></FavoriteBorderOutlined></button>}
@@ -22,7 +22,7 @@ const CarCardP=()=>{
 
             <div className='flex   flex-col mt-10'>
                 <div className='flex items-center justify-center'>
-                <img style={{maxWidth:240}} src={car1} alt="Car"></img>
+                    <img style={{ maxWidth: 240 }} src={car1} alt="Car"></img>
                 </div>
                 <div className='flex   mt-2  justify-between w-full'>
                     <div className='flex  items-center'>
@@ -46,8 +46,8 @@ const CarCardP=()=>{
 
             </div>
         </div>
-        </div>
+
     )
 }
 
-export default CarCardP ;
+export default CarCardP;
