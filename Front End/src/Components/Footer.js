@@ -2,26 +2,26 @@ import Divider from '@mui/material/Divider';
 const Footer = () => {
     return (
         <div className="bg-white py-6 px-10">
-            <div className="grid grid-cols-2 sm:grid-cols-4  gap-20 mb-4 text-center">
-                <div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 text-center sm:text-left  gap-20 mb-4 ">
+                <div className='text-left'>
                     <h1 style={{ color: "#546fff" }} className="text-3xl font-bold "> CAR RENTAL </h1>
                     <h1 className="text-gray-500 mt-4">Our vision is to provide convenience and help increase your sales business.</h1>
                 </div>
-                <div className="grid grid-rows-5 gap-4">
+                <div className="grid grid-rows-5 gap-4 text-left">
                     <h1 className="text-lg font-bold">About</h1>
                     <h1 className="text-gray-500">How it works</h1>
                     <h1 className="text-gray-500">Featured</h1>
                     <h1 className="text-gray-500">Partnership</h1>
                     <h1 className="text-gray-500">Business Relation</h1>
                 </div>
-                <div className="grid grid-rows-5 gap-4">
+                <div className="grid grid-rows-5 gap-4 text-left">
                     <h1 className="text-lg font-bold">Community</h1>
                     <h1 className="text-gray-500">Events</h1>
                     <h1 className="text-gray-500">Blogs</h1>
                     <h1 className="text-gray-500">Podcast</h1>
                     <h1 className="text-gray-500">Invite friend</h1>
                 </div>
-                <div className="grid grid-rows-5 gap-4">
+                <div className="grid grid-rows-5 gap-4 text-left">
                     <h1 className="text-lg font-bold">Socials</h1>
                     <h1 className="text-gray-500">Discord</h1>
                     <h1 className="text-gray-500">Instagram</h1>

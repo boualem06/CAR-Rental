@@ -7,3 +7,16 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: gainsboro;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #546fff;
+    border-radius: 20px;
+    }

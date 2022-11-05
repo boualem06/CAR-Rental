@@ -4,9 +4,10 @@ import CarCard from "./CarCard";
 import RecomandedCars from "./RecomandedCars";
 import PopularCars from "./PopularCars";
 import Footer from "./Footer";
+import "../App.css"
 const Home = () => {
     return (
-        <div style={{ backgroundColor: "#f3f4f8" }} className="w-full">
+        <div style={{ backgroundColor: "#f3f4f8" }} className="home w-full ">
             <Navbar></Navbar>
             <CarsHome></CarsHome>
             <div className="flex justify-between items-center px-4 mt-10">
