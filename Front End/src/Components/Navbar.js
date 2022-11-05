@@ -12,7 +12,7 @@ import ContactMail from "@mui/icons-material/ContactMail"
 
 const Navbar = () => {
     return (
-        <div className="w-full">
+        <div  className="w-full bg-white shadow-sm">
 
             <div className="hidden lg:block w-full">
                 <div className="w-full flex justify-between px-16 items-center py-8 ">
