@@ -1,11 +1,10 @@
-import Navbar from "./Components/Navbar";
-import CarsHome from "./Components/CarsHome";
-import CarCard from "./Components/CarCard";
+import FilterBar from "./Components/FilterBar";
 import Home from "./Components/Home";
 function App() {
   return (
       
-          <Home></Home>
+          // <Home></Home>
+          <FilterBar></FilterBar>
       
 
   );
