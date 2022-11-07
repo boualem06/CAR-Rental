@@ -7,15 +7,19 @@ const Products = () => {
     return (
         <div style={{ height: "100vh", backgroundColor: "#f3f4f8" }} className="overflow-y-scroll" >
             <Navbar></Navbar>
-            <div className="flex w-full  ">
-                <FilterBar></FilterBar>
+            <div className="flex w-full   ">
+                <div className="bg-white">
+                    <FilterBar></FilterBar>
+                </div>
+
                 <div className="ml-4 w-full mt-4 mb-24 ">
                     <RecomandedCars></RecomandedCars>
                     <div className="flex justify-center items-center mt-8 "><Pagination count={3} sx={{
                         "& .MuiPaginationItem-root": {
                             color: "white",
-                            background:"#546fff",
-                        }}
+                            background: "#546fff",
+                        }
+                    }
                     }  ></Pagination> </div>
                 </div>
             </div>
