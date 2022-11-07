@@ -10,7 +10,7 @@ import ImportExport from "@mui/icons-material/ImportExport"
 import ContactMail from "@mui/icons-material/ContactMail"
 
 
-const Navbar = () => {
+const Navbar = ({setState}) => {
     return (
         <div  className="w-full bg-white shadow-sm">
 
@@ -55,7 +55,7 @@ const Navbar = () => {
                 <div className="flex w-full justify-center items-center mt-4 ">
                     <div style={{ backgroundColor: "#546fff" }} className="border rounded-full px-2 py-2 mr-2  "><ContactMail sx={{ color: "white", }}></ContactMail></div>
                     <div style={{ backgroundColor: "#54a6ff" }} className="border rounded-full px-2 py-2 mr-2  "><Nightlight sx={{ color: "white", }}></Nightlight></div>
-                    <div style={{ backgroundColor: "#546fff" }} className="border rounded-full px-2 py-2 mr-2  "><ImportExport sx={{ color: "white", }}></ImportExport></div>
+                    <div style={{ backgroundColor: "#546fff" }} className="border rounded-full px-2 py-2 mr-2  "> <button onClick={()=>{setState(true)}}><ImportExport sx={{ color: "white", }}></ImportExport></button></div>
                 </div>
             </div>
 

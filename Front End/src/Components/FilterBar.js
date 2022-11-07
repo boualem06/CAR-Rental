@@ -1,23 +1,20 @@
 import Checkbox from '@mui/material/Checkbox';
 import Slider from '@mui/material/Slider';
+import Drawer from './Drawer';
 
-
-import { Sidebar, useProSidebar } from 'react-pro-sidebar';
+import { Sidebar } from 'react-pro-sidebar';
 import { useState } from 'react';
-const FilterBar = () => {
+const FilterBar = ({state,setState,toggleDrawer}) => {
     const [value, setValue] = useState(30);
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-    const { collapseSidebar } = useProSidebar(); const func = () => {
-        collapseSidebar();
-    }
-
+   
     return (
-        <div  className=''>
-            <div  className='hidden lg:block '>
+        <div className=''>
+            <div className='hidden lg:block '>
 
-                <div  className='px-10 py-6  w-fit  bg-white mt-2 '>
+                <div className='px-10 py-6  w-fit  bg-white mt-2 '>
                     <h1 className='text-gray-500 font-bold mb-4'>TYPE</h1>
 
                     <div className='grid grid-rows-6 gap-4'>
@@ -132,10 +129,10 @@ const FilterBar = () => {
 
             </div>
 
-            <div className='lg:hidden'>
+            <div className='lg:hidden relative z-20 '>
                 <div className='flex'>
 
-                    <Sidebar backgroundColor='white' collapsedWidth="0" overlayColor="red" >
+                    {/* <Sidebar backgroundColor='white' collapsedWidth="0" overlayColor="red" >
                         <div style={{ width: "100%" }} className='px-10 py-6  w-fit  bg-white mt-2 '>
                             <h1 className='text-gray-500 font-bold mb-4'>TYPE</h1>
 
@@ -247,15 +244,13 @@ const FilterBar = () => {
                             <h1 className='text-lg font-bold'>Max. $100</h1>
 
                         </div>
-                    </Sidebar>
-                    <main>
-                        <button onClick={() => collapseSidebar()}>Collapse</button>
-                    </main>
+                    </Sidebar> */}
+                    <Drawer state={state} setState={setState} toggleDrawer={toggleDrawer}></Drawer>
 
                 </div>
             </div>
         </div>
-       
+
     )
 }
 
