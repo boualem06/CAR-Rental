@@ -13,7 +13,7 @@ const CarCard = () => {
     const dislike = () => { setLiked(false) } //allows to dislike a publication
 
     return (
-        <div className="border border-gray rounded-md shadow-xl  px-4 py-6">
+        <div className="border border-gray rounded-lg shadow-xl  px-4 py-6 bg-white">
             <div className='flex justify-between'>
                 <h1 className='font-bold text-2xl'>Maruti Suzuki</h1>
                 {liked ? <button onClick={dislike}><FavoriteOutlined sx={{ color: "red" }}></FavoriteOutlined> </button> : <button onClick={like}><FavoriteBorderOutlined sx={{ color: "gray" }}></FavoriteBorderOutlined></button>}
