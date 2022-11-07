@@ -1,5 +1,15 @@
 import Checkbox from '@mui/material/Checkbox';
 import Slider from '@mui/material/Slider';
+
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MailIcon from '@mui/icons-material/Mail';
+
 import { useState } from 'react';
 const FilterBar = () => {
     const [value, setValue] = useState(30);
@@ -7,9 +17,11 @@ const FilterBar = () => {
         setValue(newValue);
     };
 
+
     return (
         <div  className='px-10 py-6  w-fit  bg-white mt-2'>
             <h1 className='text-gray-500 font-bold mb-4'>TYPE</h1>
+
 
 
             <div className='grid grid-rows-6 gap-4'>
