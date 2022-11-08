@@ -9,14 +9,14 @@ export default function Drawer({ state, setState, toggleDrawer }) {
     };
 
     return (
-        <div>
+        <div >
             <SwipeableDrawer
                 anchor={"right"}
                 open={state}
                 onClose={toggleDrawer(false)}
                 onOpen={toggleDrawer(true)}
             >
-                <div style={{ width: "100%" }} className=' px-6  w-fit  bg-white mt-2 '>
+                <div style={{ width: "100%" }} className=' px-6 py-4  w-fit  bg-white mt-2 '>
                     <h1 className='text-gray-500 font-bold mb-4'>TYPE</h1>
 
                     <div className='grid grid-rows-6 gap-4'>
@@ -128,8 +128,6 @@ export default function Drawer({ state, setState, toggleDrawer }) {
 
                 </div>
             </SwipeableDrawer>
-
-
         </div>
     );
 }

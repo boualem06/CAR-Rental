@@ -4,21 +4,20 @@ import RecomandedCars from "./RecomandedCars";
 import Footer from "./Footer";
 import Pagination from '@mui/material/Pagination';
 import { useProSidebar } from 'react-pro-sidebar';
-import {useState} from "react"
+import { useState } from "react"
 const Products = () => {
     //it will be passed as props to Navbar and FilterBar in order to open and close the FilterBar from a button in the Navbar 
     const [state, setState] = useState(false);
 
     const toggleDrawer = (open) => (event) => {
-      if (
-        event &&
-        event.type === 'keydown' &&
-        (event.key === 'Tab' || event.key === 'Shift')
-      ) {
-        return;
-      }
-  
-      setState(open);
+        if (
+            event &&
+            event.type === 'keydown' &&
+            (event.key === 'Tab' || event.key === 'Shift')
+        ) {
+            return;
+        }
+        setState(open);
     };
     return (
         <div style={{ height: "100vh", backgroundColor: "#f3f4f8" }} className="overflow-y-scroll" >
